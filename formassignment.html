@@ -1,131 +1,151 @@
-
 <head>
     <title>UBC Application</title>
     <style>
-        h1 {font-size: 20px;
+        h1 {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        img {
+            height: 400px;
+        }
+        body {
+            background-image: url('https://the-public-domain-review.imgix.net/sources/UBC-logo.jpeg?h=1200');
+            background-repeat: round;
+            background-attachment: fixed;
+            background-size: 150px;
+        }
+        div {
+            background-color: #ffffff90;
         }
     </style>
 </head>
+
 <body>
-    <h1>UBC Application</h1>
-    <form action="action_page.php" method="POST">
+    <h2 style="background-color: #ffffff90;">UBC Application</h1>
+        <form action="action_page.php" method="POST" style="text-indent: 100px;">
+            <img src="ubscampus.jpg" style="float:right">
+            <body>
+                <div>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="John" required>
+                </div>
 
-        <div>
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname" placeholder="John" required>
-        </div>
+                <br>
 
-        <br>
+                <div>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Smith" required>
+                </div>
 
-        <div>
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname" placeholder="Smith" required>
-        </div>
+                <br>
 
-        <br>
+                <div>
+                    <label for="study">Field of Study:</label>
+                    <select id="study" name="study">
+                        <option value="Languages">Languages</option>
+                        <option value="Business">Business</option>
+                        <option value="Fine Arts">Fine Arts</option>
+                        <option value="Sciences">Sciences</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Education">Education</option>
+                        <option value="Other">Other: Please describe</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="study2">Specific Field:</label>
+                    <input type="text" id="study2" name="study2" placeholder="Other: Please Describe" required>
+                </div>
 
-        <div>
-            <label for="study">Field of Study:</label>
-            <select id="study" name="study">
-                <option value="Languages">Languages</option>
-                <option value="Business">Business</option>
-                <option value="Fine Arts">Fine Arts</option>
-                <option value="Sciences">Sciences</option>
-                <option value="Engineering">Engineering</option>
-                <option value="Education">Education</option>
-                <option value="Other">Other: Please describe</option>
-            </select>
-        </div>
-        <br>
-        <div>
-            <label for="study2">Specific Field:</label>
-            <input type="text" id="study2" name="study2" placeholder="Other: Please Describe" required>
-        </div>
+                <br>
 
-        <br>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="johnsmith@gmail.com">
+                </div>
 
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="johnsmith@gmail.com">
-        </div>
+                <br>
 
-        <br>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890">
+                </div>
 
-        <div>
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890">
-        </div>
+                <br>
 
-        <br>
+                <div>
+                    <label for="bdate">Date of Birth:</label>
+                    <input type="date" id="bdate" name="bdate">
+                </div>
 
-        <div>
-            <label for="bdate">Date of Birth:</label>
-            <input type="date" id="bdate" name="bdate">
-        </div>
-        
-        <br>
+                <br>
 
-        <div>
-            <label for="years">How many years do you plan on studying here:</label>
-            <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
-        </div>
-        
-        <br>
+                <div>
+                    <label for="years">How many years do you plan on studying here:</label>
+                    <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+                </div>
 
-        <div>
-            <label for="title">Gender Identity:</label>
+                <br>
 
-            <label for="male">Male</label>
-            <input type="radio" id="male" name="title" value="male">
+                <div>
+                    <label for="title">Gender Identity:</label>
 
-            <label for="female">Female</label>
-            <input type="radio" id="female" name="title" value="Mrs.">
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="title" value="male">
 
-            <label for="nb"> Non Binary</label>
-            <input type="radio" id="nb" name="title" value="nb">
-            
-            <label for="ans"> Other / Prefer Not to Answer:</label>
-            <input type="radio" id="ans" name="title" value="ans">
-        </div>
-        
-        <br>
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="title" value="Mrs.">
 
-        <div>
-            <h1>Select Campus Services</h1>
-        </div>
-        <div style="text-indent: 25px;">
-            <label for="residence">Residence:</label>
-            <input type="checkbox" id="residence" name="residence" min="0" max="99" value="1">
-        </div>
-        <div style="text-indent: 25px;">
-            <label for="mealplan">Meal Plan:</label>
-            <input type="checkbox" id="mealplan" name="mealplan" min="0" max="99" value="1">
-        </div>
-        <div style="text-indent: 25px;">
-            <label for="library">Library Resources:</label>
-            <input type="checkbox" id="library" name="library" min="0" max="99" value="1">
-        </div>
-        <div style="text-indent: 25px;">
-            <label for="buspass">Bus Pass:</label>
-            <input type="checkbox" id="buspass" name="buspass" min="0" max="99" value="1">
-        </div>
-        <div style="text-indent: 25px;">
-            <label for="residence">Residence:</label>
-            <input type="checkbox" id="residence" name="residence" min="0" max="99" value="1">
-        </div>
-        
-        <br>
+                    <label for="nb"> Non Binary</label>
+                    <input type="radio" id="nb" name="title" value="nb">
 
-        <div>
-            <input type="reset">
-        </div>
+                    <label for="ans"> Other / Prefer Not to Answer:</label>
+                    <input type="radio" id="ans" name="title" value="ans">
+                </div>
 
-        <br>
+                <br>
 
-        <div>
-            <input type="submit">
-        </div>
+                <div>
+                    <h1>Select Campus Services</h1>
+                </div>
+                <div style="text-indent: 125px;">
+                    <label for="residence">Residence:</label>
+                    <input type="checkbox" id="residence" name="residence" min="0" max="99" value="1">
+                </div>
+                <div style="text-indent: 125px;">
+                    <label for="mealplan">Meal Plan:</label>
+                    <input type="checkbox" id="mealplan" name="mealplan" min="0" max="99" value="1">
+                </div>
+                <div style="text-indent: 125px;">
+                    <label for="library">Library Resources:</label>
+                    <input type="checkbox" id="library" name="library" min="0" max="99" value="1">
+                </div>
+                <div style="text-indent: 125px;">
+                    <label for="buspass">Bus Pass:</label>
+                    <input type="checkbox" id="buspass" name="buspass" min="0" max="99" value="1">
+                </div>
+                <div style="text-indent: 125px;">
+                    <label for="residence">Residence:</label>
+                    <input type="checkbox" id="residence" name="residence" min="0" max="99" value="1">
+                </div>
 
-    </form>
+                <br>
+
+                <div>
+                    <input type="reset">
+                </div>
+
+                <br>
+
+                <div>
+                    <input type="submit">
+                </div>
+            </body>
+        </form>
 
 </body>
